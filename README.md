@@ -2,7 +2,7 @@
 
 [Hanqing Zeng](https://sites.google.com/a/usc.edu/zengh/home)\*, [Hanjia Lyu](https://brucelyu17.github.io/)\*, [Diyi Hu](https://sites.google.com/a/usc.edu/diyi_hu/), [Yinglong Xia](https://sites.google.com/site/yinglongxia/home), [Jiebo Luo](https://www.cs.rochester.edu/u/jluo/)
 
-Contact: Hanqing Zeng (zengh@usc.edu), Hanjia Lyu (hlyu5@ur.rochester.edu)
+Contact: Hanqing Zeng (zengh@meta.com), Hanjia Lyu (hlyu5@ur.rochester.edu)
 
 [Paper](https://openreview.net/forum?id=wYvuY60SdD)
 
