@@ -1,8 +1,8 @@
 # Mowst: Mixture of Weak and Strong Experts on Graphs
 
-[Hanqing Zeng](https://sites.google.com/a/usc.edu/zengh/home)\*, [Hanjia Lyu](https://brucelyu17.github.io/)\*, [Diyi Hu](https://sites.google.com/a/usc.edu/diyi_hu/), [Yinglong Xia](https://sites.google.com/site/yinglongxia/home), [Jiebo Luo](https://www.cs.rochester.edu/u/jluo/)
+[Hanqing Zeng](https://hanqingzeng.com)\* (zengh@meta.com), [Hanjia Lyu](https://brucelyu17.github.io/)\* (hlyu5@ur.rochester.edu), [Diyi Hu](https://sites.google.com/a/usc.edu/diyi_hu/), [Yinglong Xia](https://sites.google.com/site/yinglongxia/home), [Jiebo Luo](https://www.cs.rochester.edu/u/jluo/)
 
-Contact: Hanqing Zeng (zengh@meta.com), Hanjia Lyu (hlyu5@ur.rochester.edu)
+*: equal contribution
 
 [Paper](https://openreview.net/forum?id=wYvuY60SdD)
 
