@@ -29,29 +29,51 @@ python main.py --dataset penn94 --method mowst --model2 Sage --original_data tru
 ```
 
 ### To Reproduce Results
-model2=GCN, dataset=Flickr
+#### Mowst(*)-GCN
+dataset=Flickr
 ```
-python main.py --dataset flickr --method mowst --submethod pretrain_model2 --subloss separate --infer_method multi --model2 GCN
+python main.py --dataset flickr --method mowst --submethod pretrain_model2 --subloss separate --infer_method multi --original_data false --model2 GCN
 ```
-model2=GCN, dataset=ogbn-products
+dataset=ogbn-products
 ```
-python main.py --dataset product --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --original_data --model2 GCN
+python main.py --dataset product --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --original_data true --model2 GCN
 ```
-model2=GCN, dataset=ogbn-arxiv
+dataset=ogbn-arxiv
 ```
-python main.py --dataset arxiv --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --crit crossentropy --original_data --model2 GCN
+python main.py --dataset arxiv --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --crit crossentropy --original_data true --model2 GCN
 ```
-model2=GCN, dataset=Penn94
+dataset=Penn94
 ```
-python main.py --dataset penn94 --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy
+python main.py --dataset penn94 --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --original_data false --model2 GCN
 ```
-model2=GCN, dataset=pokec
+dataset=pokec
 ```
-python main.py --dataset pokec --method mowst_star --submethod pretrain_model1 --subloss joint --infer_method joint --no_cached --crit crossentropy
+python main.py --dataset pokec --method mowst_star --submethod pretrain_model1 --subloss joint --infer_method joint --no_cached --crit crossentropy --original_data false --model2 GCN
 ```
-model2=GCN, dataset=twitch-gamer
+dataset=twitch-gamer
 ```
-python main.py --dataset twitch-gamer --method mowst --submethod none --subloss separate --infer_method multi --no_cached --crit nllloss
+python main.py --dataset twitch-gamer --method mowst --submethod none --subloss separate --infer_method multi --no_cached --crit nllloss --original_data false --model2 GCN
+```
+#### Mowst(*)-GIN
+dataset=Flickr
+```
+python main.py --dataset flickr --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --model2 GIN --crit crossentropy --original_data false
+```
+dataset=ogbn-arxiv
+```
+python main.py --dataset arxiv --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --crit crossentropy --model2 GIN --original_data false
+```
+dataset=Penn94
+```
+python main.py --dataset penn94 --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --model2 GIN --original_data false
+```
+dataset=pokec
+```
+python main.py --dataset pokec --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --model2 GIN --original_data false
+```
+dataset=twitch-gamer
+```
+python main.py --dataset twitch-gamer --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --model2 GIN --original_data false
 ```
 
 ## License
