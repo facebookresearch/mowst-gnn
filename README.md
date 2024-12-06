@@ -28,6 +28,32 @@ python main.py --dataset pokec --method mowst --model2 Sage --original_data true
 python main.py --dataset penn94 --method mowst --model2 Sage --original_data true --setting ten
 ```
 
+### To Reproduce Results
+model2=GCN, dataset=Flickr
+```
+python main.py --dataset flickr --method mowst --submethod pretrain_model2 --subloss separate --infer_method multi --model2 GCN
+```
+model2=GCN, dataset=ogbn-products
+```
+python main.py --dataset product --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --original_data --model2 GCN
+```
+model2=GCN, dataset=ogbn-arxiv
+```
+python main.py --dataset arxiv --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --crit crossentropy --original_data --model2 GCN
+```
+model2=GCN, dataset=Penn94
+```
+python main.py --dataset penn94 --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy
+```
+model2=GCN, dataset=pokec
+```
+python main.py --dataset pokec --method mowst_star --submethod pretrain_model1 --subloss joint --infer_method joint --no_cached --crit crossentropy
+```
+model2=GCN, dataset=twitch-gamer
+```
+python main.py --dataset twitch-gamer --method mowst --submethod none --subloss separate --infer_method multi --no_cached --crit nllloss
+```
+
 ## License
 Mowst is MIT licensed, as found in the LICENSE file.
 
