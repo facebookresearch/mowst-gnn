@@ -75,6 +75,15 @@ dataset=twitch-gamer
 ```
 python main.py --dataset twitch-gamer --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --model2 GIN --original_data false
 ```
+#### Mowst(*)-GIN-Skip
+dataset=pokec
+```
+python main.py --dataset pokec --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --model2 gin_mlp_res --original_data false
+```
+dataset=twitch-gamer
+```
+python main.py --dataset twitch-gamer --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --model2 gin_mlp_res --original_data false
+```
 
 ## License
 Mowst is MIT licensed, as found in the LICENSE file.
