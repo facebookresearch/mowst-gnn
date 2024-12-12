@@ -32,7 +32,7 @@ python main.py --dataset penn94 --method mowst --model2 Sage --original_data tru
 #### Mowst(*)-GCN
 dataset=Flickr
 ```
-python main.py --dataset flickr --method mowst --submethod pretrain_model2 --subloss separate --infer_method multi --original_data false --model2 GCN
+python main.py --dataset flickr --method mowst --submethod pretrain_model2 --subloss separate --infer_method multi --original_data false --model2 GCN --model1_hidden_dim 128 --model2_hidden_dim 128 --model1_num_layers 3 --model2_num_layers 3 --lr 0.1 --lr_gate 0.01 --weight_decay 0.0005 --dropout 0.3 --dropout_gate 0.5
 ```
 dataset=ogbn-products
 ```
