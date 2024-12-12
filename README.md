@@ -36,7 +36,7 @@ python main.py --dataset flickr --method mowst --submethod pretrain_model2 --sub
 ```
 dataset=ogbn-products
 ```
-python main.py --dataset product --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --original_data true --model2 GCN
+python main.py --dataset product --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --original_data true --model2 GCN --model1_hidden_dim 256 --model2_hidden_dim 256 --model1_num_layers 3 --model2_num_layers 3 --lr 0.01 --lr_gate 0.01 --weight_decay 0 --dropout 0.5 --dropout_gate 0.5
 ```
 dataset=ogbn-arxiv
 ```
