@@ -78,11 +78,11 @@ python main.py --dataset twitch-gamer --method mowst_star --submethod pretrain_m
 #### Mowst(*)-GIN-Skip
 dataset=pokec
 ```
-python main.py --dataset pokec --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --model2 gin_mlp_res --original_data false
+python main.py --dataset pokec --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --model2 gin_mlp_res --original_data false --model1_hidden_dim 64 --model2_hidden_dim 64 --model1_num_layers 2 --model2_num_layers 2 --early_signal val_loss --lr 0.01 --lr_gate 0.001 --weight_decay 0.001 --dropout 0.1 --dropout_gate 0.5
 ```
 dataset=twitch-gamer
 ```
-python main.py --dataset twitch-gamer --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --model2 gin_mlp_res --original_data false
+python main.py --dataset twitch-gamer --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --model2 gin_mlp_res --original_data false --model1_hidden_dim 64 --model2_hidden_dim 64 --model1_num_layers 2 --model2_num_layers 2 --early_signal val_loss --lr 0.01 --lr_gate 0.001 --weight_decay 0.001 --dropout 0.1 --dropout_gate 0.1
 ```
 #### Mowst(*)-SAGE
 dataset=Flickr
