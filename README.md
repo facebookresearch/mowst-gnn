@@ -40,19 +40,19 @@ python main.py --dataset product --method mowst_star --submethod pretrain_model2
 ```
 dataset=ogbn-arxiv
 ```
-python main.py --dataset arxiv --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --crit crossentropy --original_data true --model2 GCN
+python main.py --dataset arxiv --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --crit crossentropy --original_data true --model2 GCN --model1_hidden_dim 256 --model2_hidden_dim 256 --model1_num_layers 3 --model2_num_layers 3 --lr 0.001 --lr_gate 0.001 --weight_decay 0 --dropout 0.2 --dropout_gate 0.5
 ```
 dataset=Penn94
 ```
-python main.py --dataset penn94 --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --original_data false --model2 GCN
+python main.py --dataset penn94 --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --no_cached --crit crossentropy --original_data false --model2 GCN --model1_hidden_dim 64 --model2_hidden_dim 64 --model1_num_layers 2 --model2_num_layers 2 --lr 0.1 --lr_gate 0.01 --weight_decay 0.001 --dropout 0.1 --dropout_gate 0.5
 ```
 dataset=pokec
 ```
-python main.py --dataset pokec --method mowst_star --submethod pretrain_model1 --subloss joint --infer_method joint --no_cached --crit crossentropy --original_data false --model2 GCN
+python main.py --dataset pokec --method mowst_star --submethod pretrain_model1 --subloss joint --infer_method joint --no_cached --crit crossentropy --original_data false --model2 GCN --model1_hidden_dim 64 --model2_hidden_dim 64 --model1_num_layers 2 --model2_num_layers 2 --lr 0.1 --lr_gate 0.001 --weight_decay 0.001 --dropout 0.2 --dropout_gate 0.3
 ```
 dataset=twitch-gamer
 ```
-python main.py --dataset twitch-gamer --method mowst --submethod none --subloss separate --infer_method multi --no_cached --crit nllloss --original_data false --model2 GCN
+python main.py --dataset twitch-gamer --method mowst --submethod none --subloss separate --infer_method multi --no_cached --crit nllloss --original_data false --model2 GCN --model1_hidden_dim 64 --model2_hidden_dim 64 --model1_num_layers 2 --model2_num_layers 2 --lr 0.1 --lr_gate 0.1 --weight_decay 0.001 --dropout 0.2 --dropout_gate 0.1
 ```
 #### Mowst(*)-GIN
 dataset=Flickr
