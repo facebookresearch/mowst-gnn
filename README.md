@@ -57,7 +57,7 @@ python main.py --dataset twitch-gamer --method mowst --submethod none --subloss 
 #### Mowst(*)-GIN
 dataset=Flickr
 ```
-python main.py --dataset flickr --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --model2 GIN --crit crossentropy --original_data false
+python main.py --dataset flickr --method mowst_star --submethod pretrain_model2 --subloss joint --infer_method joint --model2 GIN --crit crossentropy --original_data false --model1_hidden_dim 256 --model2_hidden_dim 256 --model1_num_layers 3 --model2_num_layers 3 --early_signal val_acc --lr 0.001 --lr_gate 0.001 --weight_decay 0.0005 --dropout 0.1 --dropout_gate 0.5
 ```
 dataset=ogbn-arxiv
 ```
