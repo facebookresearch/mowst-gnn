@@ -118,7 +118,7 @@ class GIN(torch.nn.Module):
                 GINConv(MLP(hidden_channels, hidden_channels, hidden_channels, num_layers, dropout, args, gin=True)))
             self.bns.append(torch.nn.BatchNorm1d(hidden_channels))
         self.convs.append(
-            GINConv(MLP(hidden_channels, out_channels, hidden_channels, num_layers, dropout, args, gin=True)))
+            GINConv(MLP(hidden_channels, hidden_channels, out_channels, num_layers, dropout, args, gin=True)))
 
         self.dropout = dropout
 
